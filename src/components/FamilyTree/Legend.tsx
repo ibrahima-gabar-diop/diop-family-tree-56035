@@ -1,6 +1,6 @@
 export const Legend = () => {
   return (
-    <div className="fixed bottom-4 left-4 bg-card border border-border rounded-xl shadow-lg p-4 z-40">
+    <div className="fixed bottom-4 left-4 bg-card/10 backdrop-blur-md border border-border/30 rounded-xl shadow-lg p-4 z-40">
       <h3 className="font-semibold text-sm mb-3">Légende</h3>
       <div className="space-y-2">
         <div className="flex items-center gap-3">
