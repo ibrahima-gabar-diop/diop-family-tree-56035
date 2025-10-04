@@ -12,18 +12,20 @@ import { ViewMode, PersonNode, TreeDimensions } from "@/lib/familyTree/types";
 
 const getResponsiveDimensions = (): TreeDimensions => {
   const width = window.innerWidth;
+  const height = window.innerHeight;
+  const isSmallMobile = width < 375;
   const isMobile = width < 640;
   const isTablet = width >= 640 && width < 1024;
   const isDesktop = width >= 1024;
   
   return {
     width: window.innerWidth,
-    height: window.innerHeight - 80,
-    nodeWidth: isMobile ? 160 : isTablet ? 200 : isDesktop ? 240 : 260,
-    nodeHeight: isMobile ? 120 : isTablet ? 140 : isDesktop ? 150 : 160,
-    levelHeight: isMobile ? 200 : isTablet ? 240 : isDesktop ? 280 : 300,
-    coupleSpacing: isMobile ? 20 : isTablet ? 40 : isDesktop ? 50 : 60,
-    siblingSpacing: isMobile ? 60 : isTablet ? 100 : isDesktop ? 140 : 160,
+    height: height - 80,
+    nodeWidth: isSmallMobile ? 140 : isMobile ? 160 : isTablet ? 200 : isDesktop ? 240 : 260,
+    nodeHeight: isSmallMobile ? 100 : isMobile ? 120 : isTablet ? 140 : isDesktop ? 150 : 160,
+    levelHeight: isSmallMobile ? 180 : isMobile ? 200 : isTablet ? 240 : isDesktop ? 280 : 300,
+    coupleSpacing: isSmallMobile ? 15 : isMobile ? 20 : isTablet ? 40 : isDesktop ? 50 : 60,
+    siblingSpacing: isSmallMobile ? 50 : isMobile ? 60 : isTablet ? 100 : isDesktop ? 140 : 160,
   };
 };
 
@@ -141,7 +143,7 @@ export const FamilyTreeViewer = () => {
 
       <Dedication />
 
-      <div className="fixed top-20 left-0 right-0 px-4 sm:px-6 z-30 pointer-events-none">
+      <div className="fixed top-20 left-0 right-0 px-2 sm:px-4 md:px-6 z-30 pointer-events-none">
         <div className="max-w-[1800px] mx-auto pointer-events-auto">
           <SearchBar persons={allPersons} onSelectPerson={handleSearchSelect} />
         </div>

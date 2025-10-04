@@ -21,18 +21,18 @@ export const PersonInfoPanel = ({
       : "bg-gradient-to-br from-[hsl(var(--female))] to-pink-600";
 
   return (
-    <div className="fixed top-20 right-4 w-full max-w-sm bg-card border border-border rounded-xl shadow-2xl z-50 max-h-[calc(100vh-6rem)] overflow-y-auto animate-in slide-in-from-right duration-300">
-      <div className="p-6">
+    <div className="fixed top-20 right-2 sm:right-4 w-[calc(100vw-1rem)] sm:w-full max-w-sm bg-card border border-border rounded-xl shadow-2xl z-50 max-h-[calc(100vh-6rem)] overflow-y-auto animate-in slide-in-from-right duration-300">
+      <div className="p-4 sm:p-6">
         {/* Header */}
         <div className="flex items-start gap-4 pb-4 border-b border-border">
           <div
-            className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold text-lg ${avatarColor}`}
+            className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-semibold text-base sm:text-lg flex-shrink-0 ${avatarColor}`}
           >
             {initial}
           </div>
           <div className="flex-1 min-w-0">
-            <h2 className="font-semibold text-lg truncate">{person.name}</h2>
-            <p className="text-sm text-muted-foreground">
+            <h2 className="font-semibold text-base sm:text-lg truncate">{person.name}</h2>
+            <p className="text-xs sm:text-sm text-muted-foreground">
               {person.genre} • Génération {person.level}
             </p>
           </div>

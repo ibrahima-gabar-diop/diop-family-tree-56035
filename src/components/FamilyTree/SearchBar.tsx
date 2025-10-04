@@ -33,7 +33,7 @@ export const SearchBar = ({ persons, onSelectPerson }: SearchBarProps) => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full max-w-md">
+    <div ref={containerRef} className="relative w-full max-w-md mx-auto">
       <div className="relative">
         <input
           type="text"
@@ -44,9 +44,9 @@ export const SearchBar = ({ persons, onSelectPerson }: SearchBarProps) => {
           }}
           onFocus={() => setShowResults(true)}
           placeholder="Rechercher une personne..."
-          className="w-full px-4 py-2 pl-10 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
+          className="w-full px-3 sm:px-4 py-1.5 sm:py-2 pl-9 sm:pl-10 bg-background border border-border rounded-lg text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
         />
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+        <Search className="absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 sm:w-4 sm:h-4 text-muted-foreground" />
       </div>
 
       {showResults && filteredPersons.length > 0 && (

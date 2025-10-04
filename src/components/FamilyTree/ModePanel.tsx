@@ -45,9 +45,9 @@ export const ModePanel = ({ mode, persons, onApply, onCancel }: ModePanelProps) 
   };
 
   return (
-    <div className="fixed top-20 left-4 bg-card border border-border rounded-xl shadow-2xl p-6 z-40 max-w-sm animate-in slide-in-from-left duration-300">
+    <div className="fixed top-20 left-2 sm:left-4 bg-card border border-border rounded-xl shadow-2xl p-4 sm:p-6 z-40 w-[calc(100vw-1rem)] sm:w-auto max-w-sm animate-in slide-in-from-left duration-300">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="font-semibold">{getTitle()}</h3>
+        <h3 className="font-semibold text-sm sm:text-base">{getTitle()}</h3>
         <button
           onClick={onCancel}
           className="p-1 hover:bg-accent rounded-lg transition-colors"
