@@ -3,25 +3,18 @@ import { Person } from "./types";
 export const familyData: Person[] = [
     {"name": "Daro Wade", "genre": "Femme", "generation": 0, "parents": [], "enfants": ["Fasseck Birame Lo"]},
     {"name": "Waly Bandia Gueye", "genre": "Homme", "generation": 0, "parents": [], "enfants": ["Bakar Waly"]},
-    {"name": "Charles Medor Diop", "genre": "Homme", "generation": 0, "parents": [], "enfants": ["Mamé Katy", "Mamé Magne", "Gabriel Birame Medor"]},
+    {"name": "Charles Medor Diop", "genre": "Homme", "generation": 0, "parents": [], "enfants": ["Gabriel Birame Medor"]},
     {"name": "Bercy Ndack Ndir", "genre": "Femme", "generation": 0, "parents": [], "enfants": ["Bakar Waly", "Gabriel Birame Medor"]},
-    {"name": "Marianne", "genre": "Femme", "generation": 0, "parents": [], "enfants": ["Mamé Katy", "Mamé Magne"]},
     
     // Génération 1
     {"name": "Fasseck Birame Lo", "genre": "Femme", "generation": 1, "parents": ["Daro Wade"], "enfants": ["Birame Medor Diop"]},
     {"name": "Gabriel Birame Medor", "genre": "Homme", "generation": 1, "parents": ["Charles Medor Diop", "Bercy Ndack Ndir"], "enfants": ["Birame Medor Diop"]},
     {"name": "Bakar Waly", "genre": "Homme", "generation": 1, "parents": ["Waly Bandia Gueye", "Bercy Ndack Ndir"], "enfants": []},
-    {"name": "Mamé Katy", "genre": "Femme", "generation": 1, "parents": ["Charles Medor Diop", "Marianne"], "enfants": ["Marie Étienne Jouga", "Charles Lamine Sarr"]},
-    {"name": "Mamé Magne", "genre": "Femme", "generation": 1, "parents": ["Charles Medor Diop", "Marianne"], "enfants": []},
-    {"name": "Amadou Ndiaye Sarr", "genre": "Homme", "generation": 1, "parents": [], "enfants": ["Charles Lamine Sarr"]},
     
     // Génération 2
     {"name": "Birame Medor Diop", "genre": "Homme", "generation": 2, "parents": ["Fasseck Birame Lo", "Gabriel Birame Medor"], "enfants": ["Gabar Diop", "Fatou Diop Diarra", "Katy", "Magne", "Dieme Medor Dagana", "Amadou Diop Bercy"]},
     {"name": "Diarra Ba", "genre": "Femme", "generation": 2, "parents": [], "enfants": ["Gabar Diop", "Fatou Diop Diarra", "Diarra Diallo", "Iba Diallo"]},
     {"name": "Bilal Diallo", "genre": "Homme", "generation": 2, "parents": [], "enfants": ["Diarra Diallo", "Iba Diallo"]},
-    {"name": "Marie Étienne Jouga", "genre": "Femme", "generation": 2, "parents": ["Mamé Katy"], "enfants": ["Pierrot Medor Diop", "Marie Louise Medor Diop", "Doudou Medor Diop", "Thérèse Medor Diop", "Ryane Medor Diop", "Amadou Diop Bercy"]},
-    {"name": "Charles Lamine Sarr", "genre": "Homme", "generation": 2, "parents": ["Mamé Katy", "Amadou Ndiaye Sarr"], "enfants": []},
-    {"name": "Inconnu (Père des enfants de Marie Étienne Jouga)", "genre": "Homme", "generation": 2, "parents": [], "enfants": ["Pierrot Medor Diop", "Marie Louise Medor Diop", "Doudou Medor Diop", "Thérèse Medor Diop", "Ryane Medor Diop"]},
     
     // Génération 3
     {"name": "Gabar Diop", "genre": "Homme", "generation": 3, "parents": ["Birame Medor Diop", "Diarra Ba"], "enfants": ["Alioune Badara Gabar Diop", "Amadou Bamba Diop", "Ibrahima Gabar Diop", "Doudou Yaye Katy Diop", "Faty Dia Mbacke Diop"]},
@@ -32,11 +25,7 @@ export const familyData: Person[] = [
     {"name": "Dieme Medor Dagana", "genre": "Homme", "generation": 3, "parents": ["Birame Medor Diop"], "enfants": []},
     {"name": "Amadou Diop Bercy", "genre": "Homme", "generation": 3, "parents": ["Birame Medor Diop"], "enfants": []},
     {"name": "Diarra Diallo", "genre": "Femme", "generation": 3, "parents": ["Bilal Diallo", "Diarra Ba"], "enfants": []},
-    {"name": "Pierrot Medor Diop", "genre": "Homme", "generation": 3, "parents": ["Marie Étienne Jouga"], "enfants": []},
-    {"name": "Marie Louise Medor Diop", "genre": "Femme", "generation": 3, "parents": ["Marie Étienne Jouga"], "enfants": []},
-    {"name": "Doudou Medor Diop", "genre": "Homme", "generation": 3, "parents": ["Marie Étienne Jouga"], "enfants": []},
-    {"name": "Thérèse Medor Diop", "genre": "Femme", "generation": 3, "parents": ["Marie Étienne Jouga"], "enfants": []},
-    {"name": "Ryane Medor Diop", "genre": "Homme", "generation": 3, "parents": ["Marie Étienne Jouga"], "enfants": []},
+    
     
     // Génération 4
     {"name": "Alioune Badara Gabar Diop", "genre": "Homme", "generation": 4, "parents": ["Gabar Diop", "Betty Ba"], "enfants": ["Mame Diarra Diop", "Ndeye Betty Diop", "Amadou Diop (Doudou)", "Amadou Bamba Diop (Badara)", "Ndeye Salimata Diop (Badara)", "Seynabou Diop (Badara)", "Lissong Diop (Badara)", "Gabar Birame Medor Diop", "Ibrahima Gabar Diop (Badara)", "Saliou Sady Faza Diop", "El Hadji Malick Diop", "Yacine Diop", "Mouhamadou Lamine Diop"]},
@@ -60,6 +49,9 @@ export const familyData: Person[] = [
 
 
 
+
+
+
     {"name": "Pape Diop", "genre": "Homme", "generation": 5, "parents": [], "enfants": ["Abdoulaye Diop (Betty)", "Aminata Diop (Betty)", "El Hadj Malick Diop (Ndeye Betty)"]},
     {"name": "Ndeye Betty Diop", "genre": "Femme", "generation": 5, "parents": ["Alioune Badara Gabar Diop"], "enfants": ["Astou Diagne", "Mbaye Diagne", "Seynabou Diagne", "Pape Assane Diagne", "Fatou Diagne", "Badara Gabar Diagne", "Serigne MBacke Diagne", "Abdoulaye Diop (Betty)", "Aminata Diop (Betty)", "El Hadj Malick Diop (Ndeye Betty)"]},
     {"name": "Mbacké Diagne", "genre": "Homme", "generation": 5, "parents": [], "enfants": ["Astou Diagne", "Mbaye Diagne", "Seynabou Diagne", "Pape Assane Diagne", "Fatou Diagne", "Badara Gabar Diagne", "Serigne MBacke Diagne"]},
@@ -67,12 +59,13 @@ export const familyData: Person[] = [
 
 
 
-    {"name": "Rama", "genre": "Femme", "generation": 5, "parents": [], "enfants": ["Ndeye Fatou Diop", "Ahmadou Bamba Diop"]},
+
     {"name": "Amy Colé Diallo", "genre": "Femme", "generation": 5, "parents": [], "enfants": ["Lissong Diop (Doudou)"]},
     {"name": "Amadou Diop (Doudou)", "genre": "Homme", "generation": 5, "parents": ["Alioune Badara Gabar Diop"], "enfants": ["Lamine Diop", "Marie Diagne Diop", "Marie Madeleine Diop", "Lissong Diop (Doudou)", "Ndeye Khar Diop", "Astou Diop (Doudou)", "Badara Gabar Diop (Doudou)", "Ndeye Fatou Diop (Doudou)", "Ahmadou Bamba Diop"]}, 
     {"name": "Fatou Goudiaby", "genre": "Femme", "generation": 5, "parents": [], "enfants": ["Lamine Diop", "Marie Diagne Diop", "Marie Madeleine Diop"]},
     {"name": "Mariéme Wade", "genre": "Femme", "generation": 5, "parents": [], "enfants": ["Ndeye Khar Diop"]},
     {"name": "Aita Diagne", "genre": "Femme", "generation": 5, "parents": [], "enfants": ["Astou Diop (Doudou)", "Badara Gabar Diop (Doudou)"]},
+    {"name": "Rama", "genre": "Femme", "generation": 5, "parents": [], "enfants": ["Ndeye Fatou Diop", "Ahmadou Bamba Diop"]},
 
 
 
@@ -306,3 +299,4 @@ export const familyData: Person[] = [
   {"name": "Abdou Salam Diop (Bamba)", "genre": "Homme", "generation": 6, "parents": ["Amadou Bamba Diop (Badara)", "Ndeye Ndiaye"], "enfants": []},
 
 ];
+
